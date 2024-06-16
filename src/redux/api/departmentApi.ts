@@ -13,13 +13,10 @@ export const departmentApi = baseApi.injectEndpoints({
         params: arg,
       }),
       transformResponse: (response: IDepartment, meta: IMeta) => {
-        console.log(response)
         return {
           departments: response,
-         
           meta,
         };
-     
       },
       providesTags: [tagTypes.department],
     }),
