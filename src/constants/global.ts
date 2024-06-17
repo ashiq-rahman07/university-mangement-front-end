@@ -133,3 +133,5 @@ export const genderOptions = [
 	  value: day,
 	};
   });
+  
+  export const semesterRegistrationStatus = ["UPCOMING", "ONGOING", "ENDED"];

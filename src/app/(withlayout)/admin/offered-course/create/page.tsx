@@ -24,7 +24,8 @@ const CreateOfferedCoursePage = () => {
   const semesterRegistrationsOptions = semesterRegistrations?.map(
     (semester) => {
       return {
-        label: semester?.academicSemester?.title,
+        label: semester?.academicSemester?.title +"-"+semester?.academicSemester?.year,
+        
         value: semester?.id,
       };
     }
